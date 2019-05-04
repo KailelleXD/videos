@@ -1,6 +1,7 @@
 import './VideoItem.css';
 import React from 'react';
 
+// Functional component that renders data passed in as props from the VideoList component.
 const VideoItem = ({ video, onVideoSelect }) => {
     return (
         <div 
