@@ -1,6 +1,8 @@
+import './VideoList.css';
 import React from 'react';
 import VideoItem from './VideoItem';
 
+// Functional component that renders a list of VideoItem components (depended on what is returned from the YouTube API)
 const VideoList = ({ videos, onVideoSelect }) => {
     const renderedList = videos.map((video) => {
         return (
@@ -13,7 +15,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
     });
 
     return (
-        <div className="ui relaxed divided list">
+        <div className="video-list ui relaxed divided list">
             {renderedList}
         </div>
     )
